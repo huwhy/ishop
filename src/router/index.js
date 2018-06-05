@@ -29,6 +29,10 @@ export default new Router({
     {
       path: '/item/:id(\\d+)',
       component: resolve => { require(['@/pages/Item'], resolve) }
+    },
+    {
+      path: '/cart',
+      component: resolve => { require(['@/pages/Cart'], resolve) }
     }
   ]
 })

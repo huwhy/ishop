@@ -14,10 +14,10 @@
         </router-link>
       </li>
       <li>
-        <a href="">
+        <router-link to="/cart">
           <img src="https://m.wowdsgn.com/static/img/bottom-tap-icon/buy.png">
           <span>购物车</span>
-        </a>
+        </router-link>
       </li>
       <li>
         <a href="">
@@ -40,7 +40,7 @@ export default {
   computed: {
     show () {
       let path = this.$route.path
-      return !/\/item\/\d/.test(path)
+      return !/(\/item\/\d)|(\/cart)/.test(path)
     }
   }
 }
