@@ -33,6 +33,18 @@ export default new Router({
     {
       path: '/cart',
       component: resolve => { require(['@/pages/Cart'], resolve) }
+    },
+    {
+      path: '/pay',
+      component: resolve => { require(['@/pages/Pay'], resolve) }
+    },
+    {
+      path: '/me',
+      component: resolve => { require(['@/pages/Me'], resolve) }
+    },
+    {
+      path: '/me/info',
+      component: resolve => { require(['@/pages/MemberInfo'], resolve) }
     }
   ]
 })

@@ -96,7 +96,7 @@
         <li>
           合计￥399
         </li>
-        <li>
+        <li @click="toPay">
           去结算
         </li>
       </ul>
@@ -105,6 +105,13 @@
 </template>
 
 <script>
+export default {
+  methods: {
+    toPay () {
+      this.$router.push('/pay')
+    }
+  }
+}
 </script>
 
 <style lang="scss">

@@ -26,10 +26,10 @@
         </a>
       </li>
       <li>
-        <a href="">
+        <router-link to="/me">
           <img src="https://m.wowdsgn.com/static/img/bottom-tap-icon/me.png">
           <span>我</span>
-        </a>
+        </router-link>
       </li>
     </ul>
   </div>
@@ -40,7 +40,7 @@ export default {
   computed: {
     show () {
       let path = this.$route.path
-      return !/(\/item\/\d)|(\/cart)/.test(path)
+      return !/(\/item\/\d)|(\/cart)|(\/pay)/.test(path)
     }
   }
 }
