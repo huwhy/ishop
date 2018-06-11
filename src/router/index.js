@@ -45,6 +45,14 @@ export default new Router({
     {
       path: '/me/info',
       component: resolve => { require(['@/pages/MemberInfo'], resolve) }
+    },
+    {
+      path: '/me/address',
+      component: resolve => { require(['@/pages/AddressList'], resolve) }
+    },
+    {
+      path: '/me/address/:id(\\d+)',
+      component: resolve => { require(['@/pages/Address'], resolve) }
     }
   ]
 })

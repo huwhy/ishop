@@ -18,7 +18,7 @@
       </cell>
     </div>
     <div class="base-info">
-      <cell title="收货地址" >
+      <cell title="收货地址" link="/me/address">
       </cell>
     </div>
   </div>
@@ -39,6 +39,8 @@ export default {
     $route (to, from) {
       console.log(to, from)
     }
+  },
+  created () {
   }
 }
 </script>
