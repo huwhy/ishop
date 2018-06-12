@@ -1,6 +1,6 @@
 <template>
   <div class="cell">
-    <div class="cell-title">
+    <div class="cell-title" :class="{indent: 'padding-l30'}">
       <i class="iconfont" :class="icon"></i>
       <slot name="title">
         {{title}}
@@ -44,12 +44,19 @@ export default {
     link: {
       type: String,
       default: ''
+    },
+    indent: {
+      type: Boolean,
+      default: false
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+  .padding-l30 {
+    padding-left: 30px;
+  }
   .cell {
     min-height: 100px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);

@@ -53,6 +53,14 @@ export default new Router({
     {
       path: '/me/address/:id(\\d+)',
       component: resolve => { require(['@/pages/Address'], resolve) }
+    },
+    {
+      path: '/trade',
+      component: resolve => { require(['@/pages/Trades'], resolve) }
+    },
+    {
+      path: '/trade/:id(\\d+)',
+      component: resolve => { require(['@/pages/Trade'], resolve) }
     }
   ]
 })

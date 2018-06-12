@@ -10,15 +10,11 @@
       </router-link>
     </div>
     <div class="trade-list">
-      <div class="cell">
-        <div class="cell-title">
-          全部订单
-        </div>
-        <div class="cell-value">
-        </div>
-      </div>
+      <router-link to="/trade">
+        <cell title="全部订单" :more="false"></cell>
+      </router-link>
       <div class="ul">
-        <div class="li">
+        <router-link class="li" to="/trade?tab=0">
           <i class="iconfont icon-wait-pay"></i>
           <div class="cell">
             <div class="cell-title">
@@ -28,8 +24,8 @@
               <i class="iconfont icon-right-arrow"></i>
             </div>
           </div>
-        </div>
-        <div class="li">
+        </router-link>
+        <router-link class="li" to="/trade?tab=1">
           <i class="iconfont icon-wait-shipping"></i>
           <div class="cell">
             <div class="cell-title">
@@ -39,8 +35,8 @@
               <i class="iconfont icon-right-arrow"></i>
             </div>
           </div>
-        </div>
-        <div class="li">
+        </router-link>
+        <router-link class="li" to="/trade?tab=2">
           <i class="iconfont icon-wait-receive"></i>
           <div class="cell">
             <div class="cell-title">
@@ -50,8 +46,8 @@
               <i class="iconfont icon-right-arrow"></i>
             </div>
           </div>
-        </div>
-        <div class="li">
+        </router-link>
+        <router-link class="li" to="/trade?tab=3">
           <i class="iconfont icon-eval"></i>
           <div class="cell">
             <div class="cell-title">
@@ -61,8 +57,8 @@
               <i class="iconfont icon-right-arrow"></i>
             </div>
           </div>
-        </div>
-        <div class="li">
+        </router-link>
+        <router-link class="li" to="/trade?tab=4">
           <i class="iconfont icon-refund"></i>
           <div class="cell">
             <div class="cell-title">
@@ -72,7 +68,7 @@
               <i class="iconfont icon-right-arrow"></i>
             </div>
           </div>
-        </div>
+        </router-link>
       </div>
     </div>
     <div class="cell pay-cell">

@@ -12,6 +12,7 @@ import ItemBannerGroup from '@/components/ItemBannerGroup'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ItemList from '@/components/Item/ItemList'
+import Cell from '@/components/Cell'
 
 Vue.config.productionTip = false
 
@@ -26,6 +27,7 @@ Vue.component('item-banner-group', ItemBannerGroup)
 Vue.component('v-header', Header)
 Vue.component('v-footer', Footer)
 Vue.component('item-list', ItemList)
+Vue.component('cell', Cell)
 
 /* eslint-disable no-new */
 new Vue({

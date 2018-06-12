@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <v-header />
-    <van-tabs class="tabs">
+    <van-tabs class="tabs" :sticky="true">
       <van-tab v-for="index in 8" :key="index" :title="'选项 ' + index">
       </van-tab>
     </van-tabs>
