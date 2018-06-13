@@ -40,7 +40,7 @@ export default {
   computed: {
     show () {
       let path = this.$route.path
-      return !/(\/item\/\d)|(\/cart)|(\/pay)|(\/me\/address)/.test(path)
+      return !/(\/item\/\d)|(\/cart)|(\/pay)|(\/me\/address)|(^\/trade\/)/.test(path)
     }
   }
 }

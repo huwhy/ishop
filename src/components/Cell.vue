@@ -1,6 +1,6 @@
 <template>
   <div class="cell">
-    <div class="cell-title" :class="{indent: 'padding-l30'}">
+    <div class="cell-title" :class="{'padding-l30': indent}">
       <i class="iconfont" :class="icon"></i>
       <slot name="title">
         {{title}}
@@ -12,7 +12,7 @@
       </slot>
       <i class="iconfont icon-right-arrow"></i>
     </router-link>
-    <div v-else class="cell-value">
+    <div v-else class="cell-value" :class="{'padding-r30': indent}">
       <slot name="value">
         {{value}}
       </slot>
@@ -56,6 +56,9 @@ export default {
 <style lang="scss" scoped>
   .padding-l30 {
     padding-left: 30px;
+  }
+  .padding-r30 {
+    padding-right: 30px;
   }
   .cell {
     min-height: 100px;

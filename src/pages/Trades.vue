@@ -52,7 +52,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .tabs.van-tabs {
     height: 80px;
     line-height: 80px;
