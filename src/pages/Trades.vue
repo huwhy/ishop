@@ -52,7 +52,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   .tabs.van-tabs {
     height: 80px;
     line-height: 80px;
@@ -75,6 +75,8 @@ export default {
       color: #000;
     }
   }
+</style>
+<style lang="scss" scoped>
   .trade {
     display: block;
     margin-bottom: 30px;
